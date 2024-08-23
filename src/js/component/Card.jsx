@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// Todo el codigo es funcional solo que tarda en hacer los fetch
+
 export const Card = (props) => {
 
     return(

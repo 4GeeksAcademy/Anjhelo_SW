@@ -3,6 +3,8 @@ import { Context } from "../store/appContext.js";
 import { Informacion } from "../component/informacion.jsx";
 import { useParams } from "react-router";
 
+// Todo el codigo es funcional solo que tarda en hacer los fetch
+
 export const Info = () => {
 
     const params = useParams();

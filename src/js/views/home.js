@@ -3,6 +3,8 @@ import { Context } from "../store/appContext.js";
 import "../../styles/home.css";
 import  { Card }  from "../component/Card.jsx";
 
+// Todo el codigo es funcional solo que tarda en hacer los fetch
+
 export const Home = () => {
 
     const { store, actions } = useContext(Context);

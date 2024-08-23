@@ -1,5 +1,6 @@
 import { elementType } from "prop-types";
 
+// Todo el codigo es funcional solo que tarda en hacer los fetch
 
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
@@ -14,7 +15,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getCharacters: async () => {
 				try {
 
-					let response = await fetch("https://www.swapi.tech/api/people?page=1&limit=8", {
+					let response = await fetch("https://www.swapi.tech/api/people?page=1&limit=15", {
 						method: "GET"
 					});
 					const data = await response.json();
@@ -55,7 +56,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 				try {
 					
-					let response = await fetch("https://www.swapi.tech/api/planets?page=1&limit=8", {
+					let response = await fetch("https://www.swapi.tech/api/planets?page=1&limit=15", {
 						method:"GET"
 					})
 					const data = await response.json();
@@ -102,7 +103,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getVehiculos: async () => {
 
 				try {
-					let response = await fetch("https://www.swapi.tech/api/vehicles?page=1&limit=8", {
+					let response = await fetch("https://www.swapi.tech/api/vehicles?page=1&limit=15", {
 						method:"GET"
 					})
 					const data = await response.json();
