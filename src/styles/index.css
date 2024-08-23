@@ -1,3 +1,27 @@
 /* 
     General Styles
 */
+body{
+    background-image: url('https://w.wallhaven.cc/full/8o/wallhaven-8ok3xj.jpg');
+    background-size: cover
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000000; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #313131; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #3e3e3e; 
+}
